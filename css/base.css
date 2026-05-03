@@ -85,3 +85,28 @@ body {
   font-size: 15px; font-weight: 300;
   color: var(--wmut); line-height: 1.65;
 }
+
+/* =============================================
+   MOBILE OPTIMIZATION
+   ============================================= */
+@media (max-width: 600px) {
+  .content {
+    padding: 30px 24px;
+  }
+  .content.top {
+    padding-top: 20px;
+  }
+  .hero {
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+  .gold-line {
+    margin: 10px auto;
+  }
+}
+

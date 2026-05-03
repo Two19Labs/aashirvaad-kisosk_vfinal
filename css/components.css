@@ -260,3 +260,60 @@
   transform: scale(1.03); box-shadow: 0 6px 24px rgba(201,147,46,0.35);
 }
 .lang-flag { font-size: 32px; }
+
+/* =============================================
+   MOBILE OPTIMIZATION
+   ============================================= */
+@media (max-width: 600px) {
+  .card {
+    padding: 28px 24px;
+    border-radius: 20px;
+  }
+  
+  .inp {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+  
+  .btn {
+    height: 56px;
+    font-size: 16px;
+  }
+  
+  .otp-inp {
+    font-size: 32px;
+    letter-spacing: 18px;
+    padding: 14px 6px;
+  }
+  
+  .qhead h2 {
+    font-size: 24px;
+  }
+  
+  .mcq-grid.g2, .mcq-grid.g3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .mcq {
+    min-height: 100px;
+    padding: 16px 12px;
+  }
+  
+  .mcq .ico {
+    font-size: 28px;
+  }
+  
+  .lang-btn {
+    padding: 18px 24px;
+    font-size: 18px;
+  }
+  
+  .lang-flag {
+    font-size: 28px;
+  }
+  
+  .fnav {
+    padding: 12px 24px;
+  }
+}
+
