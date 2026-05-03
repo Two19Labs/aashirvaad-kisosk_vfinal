@@ -1,0 +1,26 @@
+/* =============================================
+   PROGRESS BAR
+   ============================================= */
+.prog-bar-wrap {
+  background: rgba(0,0,0,0.22);
+  padding: 14px 36px;
+  flex-shrink: 0;
+  border-bottom: 1px solid rgba(201,147,46,0.18);
+}
+.prog-label {
+  font-size: 12px; font-weight: 500; color: var(--wmut);
+  margin-bottom: 8px; letter-spacing: 0.3px;
+}
+.prog-track {
+  height: 6px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 6px; overflow: hidden;
+}
+.prog-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--g1) 0%, var(--g2) 50%, var(--g1) 100%);
+  background-size: 200% 100%;
+  border-radius: 6px;
+  transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+  animation: shimmer 2.4s linear infinite;
+}
