@@ -59,7 +59,7 @@ function getFamilyType() {
 }
 
 function genRec() {
-  if (!S.q5) { toast(T('toast_select_req')); return; }
+  if (!S.q5) S.q5 = 'Fine'; // default granularity
   saveState();
   show('s-processing');
   setTimeout(function() { buildRec(); show('s-rec'); }, 2500);
@@ -67,7 +67,7 @@ function genRec() {
 
 function buildRec() {
   var ft = getFamilyType();
-  var h = S.q4 || 'general';
+  var h = S.q4 || 'general'; // S.q4 = health goal (removed from quiz, defaults to general)
   var hGroup = REC[h] || REC['general'];
   var r = hGroup[ft] || hGroup['adults'];
 

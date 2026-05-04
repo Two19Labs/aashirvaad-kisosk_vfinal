@@ -1,3 +1,33 @@
+
+// =============================================
+// Q6 ATTA TYPE SELECTION (Quiz pill select)
+// =============================================
+function pickAttaType(el, val) {
+  document.querySelectorAll('.q6-pill').forEach(function(p) { p.classList.remove('sel'); });
+  el.classList.add('sel');
+  S.q6 = val;
+}
+
+// Navigate from Q6 into the custom blend screen
+function goToBlend() {
+  if (!S.q6) { toast(typeof T === 'function' ? T('toast_select_req') : 'Please make a selection'); return; }
+  S.blendSource = 'quiz';
+  // Silently build recommendation for order summary
+  try { if (typeof buildRec === 'function') buildRec(); } catch(e) {}
+  // Pre-select the chosen atta category
+  activeCategory = null;
+  activeElements = {};
+  document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.pill-btn').forEach(function(b) { b.classList.remove('active'); });
+  toggleCategory(S.q6);
+  show('s-custom-atta-1');
+}
+
+// Back navigation from custom-atta-1 (handles quiz vs rec entry)
+function customAttaBack() {
+  show(S.blendSource === 'quiz' ? 's-q6' : 's-rec');
+}
+
 var blendCategories = {
   "Protein Atta": ["Besan (Chickpea flour)", "Moong Dal Flour", "Soya Flour", "Lentils (Masoor)", "Chickpeas", "Rajma", "Green Peas", "Quinoa", "Oats", "Foxtail Millet", "Proso Millet", "Hemp Seeds", "Pumpkin Seeds"],
   "Iron Atta": ["Amaranth (Rajgira)", "Bajra Flour", "Sesame Seeds (Til)", "Pumpkin Seeds", "Spinach Powder", "Beetroot Powder", "Bajra", "Lentils", "Chickpeas"],
@@ -56,6 +86,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     renderCategories();
     renderElements();
+    // If user navigated here from quiz with Q6 set, pre-select that category
+    if (S.q6) {
+      activeCategory = null;
+      activeElements = {};
+      toggleCategory(S.q6);
+    }
   }, 500);
 });
 

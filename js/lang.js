@@ -70,7 +70,7 @@ const LANG = {
         quiz_back: `${ICONS.left} Back`,
         quiz_next: `Next ${ICONS.right}`,
         quiz_step: "Step",
-        quiz_of: "of 4",
+        quiz_of: "of 5",
         quiz_single_select: "Single Select",
         quiz_multi_select: "Multi Select",
         quiz_gen_plan: `See My Plan ${ICONS.sparkle}`,
@@ -177,6 +177,46 @@ const LANG = {
         custom_blend_ico: ICONS.leaf,
         custom_adjust_ico: ICONS.settings,
         custom_error_ico: ICONS.alert,
+
+
+        // Q6: Atta Type Preference
+        q6_title: "What type of atta would you prefer most?",
+        q6_desc: "Choose the blend that best fits your lifestyle",
+        q6_protein_ico: ICONS.muscle,
+        q6_iron_ico: ICONS.activity,
+        q6_lowgi_ico: ICONS.sugar,
+        q6_calcium_ico: ICONS.scale,
+        q6_vitamin_ico: ICONS.sparkle,
+        q6_fibre_ico: ICONS.leaf,
+        q6_strength_ico: ICONS.flame,
+        q6_multigrain_ico: ICONS.bread,
+        q6_millet_ico: ICONS.rice,
+        q6_lowcal_ico: ICONS.scale,
+        q6_lowcarb_ico: ICONS.droplet,
+        q6_gluten_ico: ICONS.check,
+        q6_keto_ico: ICONS.heart,
+        q6_vegflour_ico: ICONS.pot,
+        q6_lowchol_ico: ICONS.heart,
+
+
+        // Q6: Atta Type Preference
+        q6_title: "आप किस प्रकार का आटा सबसे ज्यादा पसंद करेंगे?",
+        q6_desc: "वह ब्लेंड चुनें जो आपकी जीवनशैली के लिए सबसे उपयुक्त हो",
+        q6_protein_ico: ICONS.muscle,
+        q6_iron_ico: ICONS.activity,
+        q6_lowgi_ico: ICONS.sugar,
+        q6_calcium_ico: ICONS.scale,
+        q6_vitamin_ico: ICONS.sparkle,
+        q6_fibre_ico: ICONS.leaf,
+        q6_strength_ico: ICONS.flame,
+        q6_multigrain_ico: ICONS.bread,
+        q6_millet_ico: ICONS.rice,
+        q6_lowcal_ico: ICONS.scale,
+        q6_lowcarb_ico: ICONS.droplet,
+        q6_gluten_ico: ICONS.check,
+        q6_keto_ico: ICONS.heart,
+        q6_vegflour_ico: ICONS.pot,
+        q6_lowchol_ico: ICONS.heart,
 
         // Processing
         proc_title: "Creating your nutrition plan...",
@@ -303,7 +343,7 @@ const LANG = {
         quiz_back: `${ICONS.left} पीछे`,
         quiz_next: `अगला ${ICONS.right}`,
         quiz_step: "चरण",
-        quiz_of: "4 में से",
+        quiz_of: "5 में से",
         quiz_single_select: "एकल चयन",
         quiz_multi_select: "बहु चयन",
         quiz_gen_plan: `मेरी योजना देखें ${ICONS.sparkle}`,
@@ -410,6 +450,7 @@ const LANG = {
         custom_blend_ico: ICONS.leaf,
         custom_adjust_ico: ICONS.settings,
         custom_error_ico: ICONS.alert,
+
 
         // Processing
         proc_title: "आपकी पोषण योजना बनाई जा रही है...",
