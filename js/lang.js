@@ -145,18 +145,18 @@ const LANG = {
         q4_heart_ico: ICONS.heart,
         q4_general_ico: ICONS.sparkle,
 
-        // Q5: Roti Texture
-        q5_title: "Roti Texture Preference",
-        q5_desc: "How does your family like its rotis?",
-        q5_soft: "Very Soft",
-        q5_soft_sub: "Phulka style",
-        q5_balanced: "Balanced",
-        q5_balanced_sub: "Soft + slight bite",
-        q5_crispy: "Crispy",
-        q5_crispy_sub: "Paratha style",
-        q5_soft_ico: ICONS.cloud,
-        q5_balanced_ico: ICONS.scale,
-        q5_crispy_ico: ICONS.flame,
+        // Q5: Atta Granularity
+        q5_title: "Preferred Atta Granularity?",
+        q5_desc: "Choose how your atta is ground",
+        q5_coarse: "Coarse",
+        q5_coarse_sub: "Stone-ground texture",
+        q5_medium: "Medium",
+        q5_medium_sub: "Balanced grind",
+        q5_fine: "Fine",
+        q5_fine_sub: "Smooth & silky",
+        q5_coarse_ico: ICONS.pot,
+        q5_medium_ico: ICONS.scale,
+        q5_fine_ico: ICONS.cloud,
 
         // Q6: Cooking Style
         q6_title: "Your Cooking Style",
@@ -378,18 +378,18 @@ const LANG = {
         q4_heart_ico: ICONS.heart,
         q4_general_ico: ICONS.sparkle,
 
-        // Q5: Roti Texture
-        q5_title: "रोटी बनावट पसंद",
-        q5_desc: "आपका परिवार अपनी रोटियां कैसे पसंद करता है?",
-        q5_soft: "बहुत नरम",
-        q5_soft_sub: "फुल्का स्टाइल",
-        q5_balanced: "संतुलित",
-        q5_balanced_sub: "नरम + हल्का बाइट",
-        q5_crispy: "खस्ता",
-        q5_crispy_sub: "पराठा स्टाइल",
-        q5_soft_ico: ICONS.cloud,
-        q5_balanced_ico: ICONS.scale,
-        q5_crispy_ico: ICONS.flame,
+        // Q5: Atta Granularity
+        q5_title: "पसंदीदा आटा पिसाई?",
+        q5_desc: "अपने आटे की पिसाई चुनें",
+        q5_coarse: "दरदरा",
+        q5_coarse_sub: "पत्थर-पिसा बनावट",
+        q5_medium: "मध्यम",
+        q5_medium_sub: "संतुलित पिसाई",
+        q5_fine: "बारीक",
+        q5_fine_sub: "मुलायम और चिकना",
+        q5_coarse_ico: ICONS.pot,
+        q5_medium_ico: ICONS.scale,
+        q5_fine_ico: ICONS.cloud,
 
         // Q6: Cooking Style
         q6_title: "आपकी खाना पकाने की शैली",
